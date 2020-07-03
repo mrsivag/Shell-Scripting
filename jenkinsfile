@@ -2,13 +2,7 @@ pipeline{
     agent any
     
     stages{
-          
-          stage('Git Clone'){
-				steps {
-					git 'https://github.com/mrsivag/Shell-Scripting'
-				} 
-			}
-        stage('List'){
+         stage('List'){
             steps{
                 sh 'ls- l'
             }
